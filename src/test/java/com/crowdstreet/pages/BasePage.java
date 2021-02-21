@@ -21,7 +21,8 @@ public abstract class BasePage {
     protected WebElement createAccountLink;
 
 
-
+    // CreateAnAccount link is Overlay by another webElement
+    // JavaScriptExecutor will help resolve this problem
     public void createAnAccountClick(){
         JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
         executor.executeScript("arguments[0].click();", createAccountLink);
