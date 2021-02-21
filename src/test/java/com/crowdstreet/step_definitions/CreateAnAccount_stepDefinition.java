@@ -28,7 +28,7 @@ public class CreateAnAccount_stepDefinition {
 
     @Then("user should see {string} is displayed")
     public void user_should_see_message_is_displayed(String expected) {
-        String actual = createAnAccountPage.CreateAnAccountTitle();
+        String actual = createAnAccountPage.CreateAnAccountMessage();
         Assert.assertTrue(expected.contains(actual));
     }
 

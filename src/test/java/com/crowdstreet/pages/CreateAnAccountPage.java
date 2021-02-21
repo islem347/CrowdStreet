@@ -20,40 +20,40 @@ public class CreateAnAccountPage extends BasePage {
     WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 20);
 
     @FindBy(xpath = "//span[@class='title']")
-    public WebElement signupWithMessage;
+    private WebElement signupWithMessage;
 
     @FindBy(id="create_account_email")
-    public WebElement emailBox;
+    private WebElement emailBox;
 
     @FindBy(xpath = "(//input[@type='text'])[2]")
-    public WebElement firstNameBox;
+    private WebElement firstNameBox;
 
     @FindBy(xpath = "(//input[@type='text'])[3]")
-    public WebElement lastNameBox;
+    private WebElement lastNameBox;
 
     @FindBy(xpath = "(//input[@type='password'])[2]")
-    public WebElement newPasswordBox;
+    private WebElement newPasswordBox;
 
     @FindBy(xpath = "(//input[@type='password'])[3]")
-    public WebElement confirmPasswordBox;
+    private WebElement confirmPasswordBox;
 
     @FindBy(xpath = "(//input[@type='text'])[5]")
-    public WebElement phoneNumberBox;
+    private WebElement phoneNumberBox;
 
     @FindBy(xpath = "(//input[@type='text'])[6]")
-    public WebElement streetAddressBox;
+    private WebElement streetAddressBox;
 
     @FindBy(xpath = "(//input[@type='text'])[7]")
-    public WebElement cityBox;
+    private WebElement cityBox;
 
     @FindBy(xpath = "(//input[@type='text'])[8]")
-    public WebElement stateDropdown;
+    private WebElement stateDropdown;
 
     @FindBy(xpath = "(//input[@type='text'])[9]")
-    public WebElement zipCodeBox;
+    private WebElement zipCodeBox;
 
     @FindBy(xpath = "(//input[@type='text'])[10]")
-    public WebElement countryDropdown ;
+    private WebElement countryDropdown ;
 
     @FindBy(xpath = "//label[@class='_field_e1a40'][1]")
     public WebElement accreditedInvestorCheckbox;
@@ -65,30 +65,30 @@ public class CreateAnAccountPage extends BasePage {
     public WebElement understandCheckBox;
 
     @FindBy(xpath = "(//div[@class='recaptcha-container']//iframe)[1]")
-    public WebElement captchaIframe;
+    private WebElement captchaIframe;
 
    // @FindBy(css = "div.recaptcha-checkbox-checkmark")
     @FindBy(id="recaptcha-anchor-label")
-    public WebElement captchaCheckBox;
+    private WebElement captchaCheckBox;
 
     @FindBy(xpath = "(//a[.='Sign In'])[4]")
-    public WebElement alreadyHaveAnAccountSignInText;
+    private WebElement alreadyHaveAnAccountSignInText;
 
     @FindBy(xpath = "//button[.='Sign Up']")
-    public WebElement signUpButton;
+    private WebElement signUpButton;
 
     @FindBy(xpath = "//h2[.='Congrats, ']")
-    public WebElement congratsMessage;
+    private WebElement congratsMessage;
 
     @FindBy(className = "message font-size--xsm text-align--center")
-    public WebElement confirmationMessage;
+    private WebElement confirmationMessage;
 
     @FindBy(xpath = "(//span[@class='button-title font-size--xsm font-weight--bold'])[2]")
-    public WebElement completeMyProfileButton;
+    private WebElement completeMyProfileButton;
 
 
 
-    public String CreateAnAccountTitle(){
+    public String CreateAnAccountMessage(){
         wait.until(ExpectedConditions.visibilityOf(signupWithMessage));
          return signupWithMessage.getText();
     }
