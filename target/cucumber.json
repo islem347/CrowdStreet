@@ -1,0 +1,150 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3410000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user on the landing page",
+            "match": {
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.user_on_the_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5652000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on create an account link",
+            "match": {
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.user_clicks_on_create_an_account_link()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-21T17:02:06.567Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2409000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crowdstreet.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "As a new user, I should be able to create a new user account",
+        "description": "",
+        "id": "create-a-new-account;as-a-new-user--i-should-be-able-to-create-a-new-user-account",
+        "after": [
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.crowdstreet.step_definitions.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5299000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user enters all valid credentials",
+            "match": {
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.user_enters_all_valid_credential()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 246000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user check the captcha checkbox",
+            "match": {
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.userCheckTheCaptchaCheckbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 446000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user click on sign up button",
+            "match": {
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.userClickOnSignUpButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2697000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should be able to click on Complete My Profile Button",
+            "match": {
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.userShouldBeAbleToClickOnCompleteMyProfileButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 869000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should access his profile successfully and title contains \"Profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile\"",
+                  "offset": 63
+                }
+              ],
+              "location": "com.crowdstreet.step_definitions.CreateAnAccount_stepDefinition.userShouldAccessHisProfileSuccessfullyAndTitleContains(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Create a new account",
+    "description": "",
+    "id": "create-a-new-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Registration.feature",
+    "tags": []
+  }
+]
